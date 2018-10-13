@@ -1,4 +1,4 @@
-Plugins
+插件
 =======
 
 You can add more features & apps by simply selecting the software you need, we

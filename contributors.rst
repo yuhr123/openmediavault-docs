@@ -1,4 +1,4 @@
-Contributors
+贡献者
 ============
 
 **Founder and project manager**

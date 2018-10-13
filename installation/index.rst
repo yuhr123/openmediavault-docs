@@ -1,6 +1,6 @@
 .. _installation_index:
 
-Installation
+安装
 ############
 
 Before you begin:

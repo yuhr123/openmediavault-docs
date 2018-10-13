@@ -1,24 +1,19 @@
-|omv| |version| documentation
+|omv| |version| 中文文档
 =============================
 
-|omv| is a complete network attached storage (NAS) solution based on Debian
-Linux.
+|omv| 是一款功能完备的网络附加存储 (NAS) 解决方案，基于 Debian Linux 开发。
 
-* It's available for x86-64 and ARM platforms.
-* Features a full Web Administration interface.
-* Can be controlled via SSH, if enabled.
-* Access to file storage is possible with a variety of different protocols such
-  as FTP, SMB/CIFS or NFS and can be controlled with Access Right Management
-  for users and groups.
+* 支持 x86_64 和 ARM 平台
+* 全功能网页管理界面 Web GUI
+* 支持通过 SSH 管理系统
+* 提供丰富的存储访问协议 FTP、SMB/CIFS、NFS 以及面向用户和组的访问权限管理。
 
-|omv| is primarily designed to be used in home environments or small home
-offices, but is not limited to those scenarios. It is a simple and easy to use
-out-of-the-box solution that everyone can install and administer without
-needing expert level knowledge of Networking and Storage Systems.
+|omv| 起初主要面向家庭和小型家庭办公环境设计，但应用环境不限于此。它是一款开箱即用的方案，即便
+在网络和存储系统方面没有专业经验的普通用户也可能够安装和使用。
 
-The system is built on a modular design and can be easily extended with plugins
-available right after installation of the base system. Additional 3rd-party
-plugins are available via the `OMV-Extras repository <http://omv-extras.org/>`_.
+|omv| 采用模块化设计，在基础系统安装完成以后，用户非常方便的安装插件来扩展功能。除了官方提供
+的插件以外，还可以通过第三方 `OMV-Extras 源仓库 <http://omv-extras.org/>`_ 
+安装更多插件。
 
 .. toctree::
    :maxdepth: 2

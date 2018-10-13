@@ -1,4 +1,4 @@
-Installation via images
+通过 image 镜像安装
 #######################
 
 Prepare the image

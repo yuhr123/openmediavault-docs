@@ -1,4 +1,4 @@
-Installation on USB
+安装到 USB
 ###################
 
 |omv| can be installed on an USB flash drive to boot from it.

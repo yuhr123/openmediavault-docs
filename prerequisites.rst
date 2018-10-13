@@ -1,4 +1,4 @@
-Prerequisites
+硬件配置要求
 =============
 
 Before installing |omv| make sure your hardware is supported.

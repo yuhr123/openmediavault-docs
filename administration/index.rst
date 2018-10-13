@@ -1,6 +1,6 @@
 .. _administration_index:
 
-Administration
+系统管理
 ##############
 
 .. toctree::

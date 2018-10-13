@@ -1,6 +1,6 @@
 .. _development_index:
 
-Development
+开发
 ###########
 
 .. toctree::

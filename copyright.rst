@@ -1,4 +1,4 @@
-Copyright
+版权声明
 =========
 
 |omv| is Copyright |copy| 2009-2018 by Volker Theile (volker.theile@openmediavault.org).

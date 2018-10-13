@@ -1,4 +1,4 @@
-Installation on Debian
+在 Debian 上安装
 ######################
 
 You can install |omv| on a Debian installation as well. To do so, simply

@@ -1,4 +1,4 @@
-Press releases, reviews and external references
+媒体报道
 ===============================================
 
 	- Dec 2008, FreeNAS: BSD Line and Linux Fork `Linux magazine <http://www.linux-magazine.com/Online/News/FreeNAS-BSD-Line-and-Linux-Fork>`_

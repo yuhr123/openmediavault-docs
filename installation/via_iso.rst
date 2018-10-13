@@ -1,4 +1,4 @@
-Installation using an ISO image
+使用 ISO 镜像安装
 ###############################
 
 Burn the installer
