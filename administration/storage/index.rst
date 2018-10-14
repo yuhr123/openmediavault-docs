@@ -1,6 +1,6 @@
 .. _storage_index:
 
-Storage
+存储
 #######
 
 .. toctree::

@@ -3,30 +3,23 @@
 安装
 ############
 
-Before you begin:
-	- Check if your hardware is supported on the system :doc:`requirements
-	  page </prerequisites>`.
-	- `Download <https://sourceforge.net/projects/openmediavault/files/>`_ an
-	  installation image file for your system. |omv| provides ISO installers
-	  for x86 architecture and several preconfigured images for ARM devices.
-	- Disconnect all harddisks except the future system drive. This way you
-	  avoid an accidental install on a storage drive (which will be configured
-	  after installation anyway).
+开始之前：
+	- 检查你的硬件是否满足 :doc:`硬件配置要求 </prerequisites>`。
+	- `点此下载安装镜像 <https://sourceforge.net/projects/openmediavault/files/>`_，x86 架构请下载 ISO 镜像，ARM 架构请按型号选择预配置镜像。
+	- 为了避免系统被不小心安装到数据盘上，建议除系统盘以外，断开所有其他硬盘。
 
-Installation variants:
-	Choose your installation variant and follow the instructions.
+安装方式：
+	按照下列描述选择一种安装方式。
 
-	* :doc:`Dedicated drive </installation/via_iso>` - Advised method via ISO image. This runs OMV from its own drive.
-	* :doc:`USB flash drive </installation/on_usb>` - This runs |omv| from a USB flash drive.
-	* :doc:`Debian Operating System </installation/on_debian>` - This runs |omv| as a services on top of a Debian OS.
-	* `Debian Operating System via deboostrap <https://forum.openmediavault.org/index.php/Thread/12070-GUIDE-DEBOOTSTRAP-Installing-Debian-into-a-folder-in-a-running-system/>`_. Use this as a last resource in case the installer does not recognize a specific essential hardware component like hard disk (NVME) or a network card that needs a higher kernel (backport).
-	* :doc:`SD card </installation/via_image>` - This runs |omv| from a SD card.
+	* :doc:`安装系统到硬盘 </installation/via_iso>` - 建议通过 ISO 镜像安装，这样可以让 OMV 运行在独立的磁盘上。
+	* :doc:`安装系统到 U 盘 </installation/on_usb>` - 这种方式在 U 盘上运行 |omv|。
+	* :doc:`在 Debian 系统上安装 </installation/on_debian>` - 这种方式以服务的方式在 Debian 系统上运行 |omv|。
+	* `在 Debian 系统上通过 deboostrap 安装 <https://forum.openmediavault.org/index.php/Thread/12070-GUIDE-DEBOOTSTRAP-Installing-Debian-into-a-folder-in-a-running-system/>`_ - 当系统无法识别 (NVME) 硬盘或某些网卡等需要更高版本内核 (backport) 支持的特殊硬件时，可以参考这种安装方案。
+	* :doc:`安装到 SD 卡 </installation/via_image>` - 这种方式在 SD 卡上运行 |omv|。
 
-First time use:
-	If you have a screen attached, KVM or IMPI console the login screen will
-	display the current IP address assigned for the |webui|. Open your browser
-	and type that IP address. The default |webui| login credential is
-	``admin:openmediavault``, the ``root`` password is the one you setup during
-	installation.
+初次使用：
+	如果有显示器、KVM 或 IMPI 控制台，在登录界面上就能看到网页管理界面的 IP 地址。
+	在浏览器中输入该 IP 地址即可打开登录界面，默认用户名和密码为
+	``admin:openmediavault``，``root`` 密码则是你在安装时设置的。
 
-	For ARM images the root password is the same as admin password.
+  ARM 镜像的默认 ``root`` 密码为 ``openmediavault``。

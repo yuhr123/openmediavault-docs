@@ -1,4 +1,4 @@
-Access Rights Management
+访问权限管理
 ########################
 
 In this section you can create, edit and access information of |omv| users, groups

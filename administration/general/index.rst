@@ -1,6 +1,6 @@
 .. _general_index:
 
-General
+常规
 #######
 
 .. toctree::
