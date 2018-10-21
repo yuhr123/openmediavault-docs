@@ -1,30 +1,25 @@
 使用 ISO 镜像安装
 ###############################
 
-Burn the installer
+制作安装器
 ------------------
-	For x86 architecture you can burn the ISO directly into a USB drive using
-	`etcher <https://etcher.io/>`_ or  dd linux utility::
+	对于 x86 架构的设备，你可以使用 `etcher <https://etcher.io/>`_ 或 linux 的 dd 
+	命令直接将 ISO 镜像写入 U 盘::
 
 	$ sudo dd if=xxx.iso of=/dev/sdX bs=4096
 
-	If you have a CD-DVD burner, you can burn the ISO into an optical media
-	then boot from CD or DVD.
+	如果你有 CD-DVD 光驱，可以刻录 ISO 镜像光盘并从 CD 或 DVD 引导启动。
 
-Boot the installer
+引导安装器
 ------------------
-	For x86 architecture, enter BIOS configuration, select to boot either from
-	USB or CD and reboot.
+	对于 x86 架构的 PC 主机，请参照计算机或主板说明书，开机引导进入 BIOS 设置，选择从 USB
+	或 CD 引导启动。
 
-Installer
+安装器
 ---------
-	The current ISO installer is reduced to have minimal interaction. You will
-	prompted to select location, language and root password. The installer will
-	pick the first available disk to deploy the the OS. Once the installer
-	finished the system will reboot, make sure you remove the installer and
-	select BIOS to boot from the disk where |omv| was installed. You can also
-	start connecting any data drives you previously disconnected before install
-	or reinstall.
+	当前 ISO 安装器对安装过程的交互做了进一步的精简，你需要选择地区、语言并设置 ``root`` 
+	密码。安装器会将系统安装在第一个可用磁盘。系统会在安装完成后重启，请在安装完成后移除安装盘
+	并从系统盘引导启动，然后就可以重新连接之前断开的数据盘了。
 
 	.. figure:: /_static/images/install_via_iso/install_1.png
 	.. figure:: /_static/images/install_via_iso/install_2.png
@@ -46,11 +41,11 @@ Installer
 	.. figure:: /_static/images/install_via_iso/install_18.png
 	.. figure:: /_static/images/install_via_iso/install_19.png
 
-Troubleshooting
+故障排除
 ---------------
 
-The error `Unable to install GRUB in /dev/sda` occurs.
-	In this case execute the following steps:
+发生 `Unable to install GRUB in /dev/sda` 错误。
+	这种情况可以执行以下步骤：
 
 	- Select `Continue` in this window and also on the next which says
 	  `Installation step failed`.

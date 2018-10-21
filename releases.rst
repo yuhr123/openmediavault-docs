@@ -2,8 +2,8 @@
 ========
 
 
-.. csv-table:: |omv| historical releases
-   :header: "Version", "Codename", "Base Distro", "Status", "Date Released"
+.. csv-table:: |omv| 历史版本
+   :header: "版本", "代号", "底层系统", "状态", "发布日期"
    :widths: 5, 10, 10, 15, 30
 
    0.2,Ix,Debian 6,EOL,Oct 2011

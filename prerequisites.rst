@@ -1,26 +1,27 @@
 硬件配置要求
 =============
 
-Before installing |omv| make sure your hardware is supported.
+安装 |omv| 前请先确认你的硬件是否支持。
 
-* **CPU**: Any x86-64 or ARM compatible processor
-* **RAM**: 1 GiB capacity
-* **HDD**:
+* **CPU 处理器**: 任何 x86_64 或 ARM 架构处理器
+* **RAM 内存**: 1 GiB 以上
+* **HDD 硬盘**:
 
-  * **System Drive**: min. 4 GiB capacity
-  * **Data Drive**: capacity according to your needs
+  * **系统盘**: 不低于 4 GiB
+  * **数据盘**: 无限制
 
 .. note::
-   The whole disc will be occupied by the system and swap space [1]_, so size
-   doesn't matter so much. Data storage on the system disc is not supported.
+   
+   整个磁盘都会被用于系统和交换分区 [1]_，因此容量并不十分关键。|omv| 不支持数据存储在
+   系统盘。
 
-Spinning Harddisk, SSD [2]_, Disk-on-Module [3]_, CompactFlash [4]_ or USB thumb
-drive [5]_ type drives can be used as system drive.
+机械硬盘、SSD [2]_、DOM [3]_、CF [4]_ 或 USB 可移动磁盘 [5]_ 都可以用作系统盘。
 
-If you use a Flash Drive, select one with static wear leveling [6]_, without
-this the drive will have a very short lifetime. It is also recommended to
-install and activate the :ref:`Flash Memory plugin <plugin_3rd_party>`. The
-entire disk is used as system disk and can not be used to store user data.
+如果使用 U 盘、移动硬盘等闪存，请注意是否支持静态负载平衡 (static wear leveling) [6]_，
+没有这项技术的闪存可能用不多久就会损坏。同时建议安装和启用
+:ref:`Flash Memory plugin <plugin_3rd_party>` 插件。系统盘完全被用于系统运行，
+无法用于存储用户数据。
+
 
 .. [1] https://en.wikipedia.org/wiki/Paging
 .. [2] https://en.wikipedia.org/wiki/Solid-state_drive
