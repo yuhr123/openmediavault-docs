@@ -1,20 +1,18 @@
 访问权限管理
 ########################
 
-In this section you can create, edit and access information of |omv| users, groups
-and shared folders.
+本节介绍用户、组和共享文件夹的创建、编辑与访问相关内容。
 
-User
-====
+用户
+============
 
-Create or modify users information and configuration of home folders.
+创建和修改用户信息以及配置家目录。
 
-Add
-^^^^
+添加
+^^^^^^^^^^
 
-Information
-	The configuration panel gives you options to add, edit or remove users. The grid displays all
-	|omv| current users.
+信息
+	配置面板提供添加、编辑和删除用户的选项。网格中显示当前 |omv| 上的所有用户。
 
 	When a user is created |omv| backend executes :command:`useradd` in non-interactive 
 	mode with all the information passed from the web text fields, this command also creates an 
@@ -25,7 +23,7 @@ Information
 	specific user. By default users are created with :command:`/bin/nologin`
 	shell, this will prevent local and remote console access.
 
-Group
+组
 	Add or remove users from specific groups. In linux groups can be used to control 
 	access to certain features and also for permissions. 
 
@@ -33,7 +31,7 @@ Group
 	a user to ``saned`` will give access to scanners, etc. By default all users created using 
 	the |webui| are added to the ``users`` group (``gid=100``).
 
-Public Key
+公钥
 	Add or remove :doc:`public keys </administration/services/ssh>` for granting remote access for users. 
 
 .. note::
@@ -42,8 +40,8 @@ Public Key
 	- The grid shows information from internal database and also parses information from :file:`/etc/passwd` lines with a `UID` number higher than 1000. A user created in terminal is not in the internal database. This causes trouble with samba, as there is no user/password entry in the tdbsam file. Just click edit for the user, enter the same or new password, now the user has the linux and samba password synced.
 	- A user can log into the web interface to see his own profile information. Depending if the adminstrator has setup the username account to allow changes, they can change their password and mail account.
 
-Import
-^^^^^^
+导入
+^^^^^^^^^^
 
 Designed for bulk user creation. Create a spreadsheet with the corresponding data as
 described in the import dialog window, save it as CSV (make sure the field separator is semicolon :code:`;`), then just
@@ -60,14 +58,14 @@ Example outputs::
 Paste the contents into the import dialog. The last field is a boolean for
 allowing the user to change his account.
 
-Privileges
+权限
 ^^^^^^^^^^
 
 The button opens a window that displays all current exisiting |sf| and their
 privileges for selected user from the grid. How the privileges are stored is
 described further down in the `shared folder <#shared-folder>`_ section.
 
-Settings
+设置
 ^^^^^^^^
 
 Option to select a |sf| as root for home folders for new users created in the 
@@ -76,38 +74,38 @@ their home folders moved to this new location. You can manually edit :file:`/etc
 to point them to the new location. Also existing users data in default linux location :file:`/home`
 has to be moved manually.
 
-Group
-=====
+组
+=========
 
-Add
-^^^
+添加
+^^^^^^^^
 
 Create groups and select the members. You can select current |omv| users
 and system accounts. Information is stored in ``config.xml`` and
 :file:`/etc/group`.
 
-Import
-^^^^^^
+导入
+^^^^^^^^^^
 
 Bulk import works in similar as user account import. Just a csv text,
 delimited with a semicolon :code:`;`. The dialog displays the necessary
 fields.
 
-Edit
-^^^^
+编辑
+^^^^^^^^^^^
 Just to add or remove members from groups. Default groups created in the
 |webui| have a ``GID`` greater than ``1000``. Same as usernames, groups created
 in terminal are not stored in the internal database. Just edit, insert a
 comment and their information should now be stored in ``config.xml``.
 
-Shared Folder
+共享文件夹
 =============
 
 Shared folder in |omv| is an internal database object configuration that
 has been created using the |webui|.
 
-Add
-^^^
+添加
+^^^^^^^^^^^^^
 
 When a |sf| is created using the add button, the window form displays the following options:
 
@@ -186,8 +184,8 @@ Plugins can use them also just by using the shared folder combo class.
 	- If a |sf| is being used by a service (FTP, plugins, etc.) is not possible to delete it. Is necessary to disengage the |sf| from the service(s) or section(s) that is holding it before proceeding with removal. This will also prevent to unmount a device from the |webui| in the filesystem section if there is still a |sf| associated with it.
 	- Due to the design of the software is not possible at the moment to know what section or service is holding which |sf|.
 
-Edit
-^^^^
+编辑
+^^^^^^^^^^^^^
 
 Edit |sf| is possible, but it has some limitations. You can only change the parent device volume. Once the parent device is changed the backend will reconfigure every service that is using a |sf| and stop/start daemons accordingly.
 
@@ -197,7 +195,7 @@ Be aware that changing the parent device volume will not move the data from one 
 
 	**NFS Server**: Editing the parent device will not descent into :file:`/etc/fstab`. Make sure you edit the share in the NFS section so the bind can be remounted.
 
-Privileges
+权限
 ^^^^^^^^^^
 
 Same as in the user section, the window here is relative to the shared folder.
@@ -218,7 +216,7 @@ section. But it is also possible to edit privileges from the |sf| combo
 selection, just click the :fa:`search` to left side of the drop down menu.
 
 
-ACL (Access Control List)
+ACL (访问控制列表)
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Provides fine grained permission control besides the standard POSIX permissions. The usage of ACL is not recommended for the average home user. If a server is using an extensive list of users then ACL could suit better [1]_ [2]_.

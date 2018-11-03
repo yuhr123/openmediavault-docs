@@ -1,4 +1,4 @@
-Filesystem Environmental Variables
+文件系统的环境变量
 ##################################
 
 This is the current filesystem mount options passed when a mount button is executed in the webUI::

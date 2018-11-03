@@ -4,9 +4,8 @@
 |omv| is Copyright |copy| 2009-2018 by Volker Theile (volker.theile@openmediavault.org).
 All rights reserved.
 
-|omv| is free software: you can redistribute it and/or modify it under the
-terms of the GNU General Public License v3 as published by the Free Software
-Foundation.
+|omv| 是自由软件：你可以在自由软件基金会制定的 GNU General Public License v3 (GPL v3)
+开源协议下修改和重新分发。
 
 |omv| is distributed in the hope that it will be useful, but WITHOUT ANY
 WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR

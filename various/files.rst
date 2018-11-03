@@ -1,4 +1,4 @@
-Configuration files
+配置文件
 ===================
 
 

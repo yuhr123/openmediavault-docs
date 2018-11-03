@@ -1,14 +1,14 @@
-Software
+软件
 ########
 
-Overview
+概览
 --------
 
 |omv| is a Debian based distribution. It uses apt to install packages. All
 standard Debian packages are upgraded using the official Debian mirrors. |omv|
 packages are upgraded using the http://packages.openmediavault.org repository.
 
-Update Manager
+更新管理器
 --------------
 
 The update manager displays all available packages for upgrade. You can select
@@ -17,8 +17,8 @@ perform a daily apt-get update and fetch upgrade packages automatically. If you
 have notifications enabled you receive an email every time packages are ready
 for install.
 
-Using CLI
----------
+使用命令行
+--------------
 
 **apt-get**
 
@@ -43,7 +43,7 @@ command performs several tasks and modifications depending if the upgrade
 includes moving to a new base distribution. For example: Debian Squeeze to
 Wheezy or Wheezy to Jessie,
 
-Installing plugins
+安装插件
 ------------------
 
 The plugins can installed either by repository selecting from the available
@@ -51,7 +51,7 @@ list or uploading the deb package. If the plugin requires some extra software
 it will fetch all remaining packages from either Debian mirrors or another
 repo the plugin specifies.
 
-Installing Software
+安装软件
 -------------------
 
 You have to your availability all Debian software repository to install in
@@ -69,7 +69,7 @@ your server
 
 	$ apt-get purge <packagename>
 
-Repositories
+软件源
 ------------
 
 **Debian**

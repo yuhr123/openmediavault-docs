@@ -1,4 +1,4 @@
-Advanced Configuration
+高级配置
 ======================
 
 |omv| is not a replacement for webmin, where you can configure all options in
@@ -16,7 +16,7 @@ To overcome this there are some options available to modify some of the default
 
 .. _environmental_variable:
 
-Environmental Variables
+环境变量
 -----------------------
 
 The web does not provide access to ALL the configuration aspects of a complex
@@ -39,7 +39,7 @@ and run omv-mkconf ssh, finally reload the SSH service via |webui| or systemd.
 The list of environmental variables used for ``/etc/fstab`` filesystem with the
 defaults options and how to use them is described :doc:`here </various/fs_env_vars>`.
 
-The mkconf folder
+mkconf 文件夹
 -----------------
 
 The other advanced configuration is the use of :code:`mkconf/{service}.d/`
@@ -52,7 +52,7 @@ that server will not overwrite the files every time you change something in the
 |webui|.
 
 
-Examples using mkconf folders
+mkconf 文件夹举例
 -----------------------------
 
 Network interfaces file

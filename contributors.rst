@@ -1,11 +1,11 @@
 贡献者
 ============
 
-**Founder and project manager**
+**创始人和项目管理者**
 
 Volker Theile
 
-**Forum**
+**论坛**
 
 * area3o
 * Cpoc
@@ -28,7 +28,7 @@ Volker Theile
 * WastlJ
 * The Master
 
-**Documentation**
+**文档**
 
 * area3o
 * Davidh2k
@@ -38,11 +38,11 @@ Volker Theile
 * witopi
 * subzero79
 
-**Testing**
+**测试**
 
 * Falk Menzel
 
-**Translators**
+**翻译者**
 
 * Alexandr aka azlk (Russian)
 * Andrey Chapalda (Ukrainian)
@@ -101,7 +101,7 @@ Volker Theile
 * Miha Bezjak (Slovenian)
 * Jérémy D (French)
 
-**Code**
+**代码**
 
 * Stefan Seidel
 * Don Harpell
@@ -109,4 +109,4 @@ Volker Theile
 * Tony Guepin
 * Ian Grant
 
-More code contributers can be found `here <https://github.com/openmediavault/openmediavault/graphs/contributors>`_.
+贡献代码相关信息请参考 `这里 <https://github.com/openmediavault/openmediavault/graphs/contributors>`_.
