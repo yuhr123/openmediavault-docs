@@ -1,16 +1,16 @@
 RSync
-#####
+########
 
-The server can be configured to act as a client to pull and push data to remote
-locations as well as act an RSync daemon server, where other clients can
-retrieve or store data from/to the server. In RSync language, the shared
-folders are called modules. Since |omv| version 3.0 is possible now to create
-remote RSync jobs using ssh as transport shell.
-The RSync is divided in two tabs:
+服务器既可以配置成客户端，也可以配置成 RSync 服务端。客户端客户端既可以向服务端推送数据，
+也可以从服务端拉取数据，即任何客户端都可以从服务端存取数据。对 RSync 而言，共享文件夹被
+成为 ``模块``。从 |omv| 3.0 版本起支持通过 ssh 创建远程 RSync 任务。
+
+RSync 被分成了两个选显卡：
+
 
 .. _admin_rsync_jobs_client:
 
-Jobs (client)
+任务(客户端)
 -------------
 
 Based on cron, the tasks can be configured to run at certain time or make it
@@ -102,8 +102,8 @@ Configuration
 	rsync --verbose --log-file="/var/log/rsync.log" --rsh "ssh -p 22" --recursive --times --archive --perms '/srv/dev-disk-by-label-VOLUME1/backupdir/' 'username@backupserver.com:/opt/backup' & wait $!
 	omv_log "\nThe synchronisation has completed successfully."
 
-Server
-------
+服务器
+-------------
 
 This is the place for configuring the RSync daemon and its modules
 (shared folders).
